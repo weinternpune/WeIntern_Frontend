@@ -45,11 +45,11 @@
       "last 1 safari version"
     ],
     "engines": {
-       "node": "18.x"
+       "node": "22.x"
    }
   },
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   },
   "proxy": "http://localhost:5000"
 }
