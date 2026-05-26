@@ -366,6 +366,7 @@
   margin-top: 2px;
 }
 
+
 .enroll-form-grid {
 
   display: grid;
@@ -664,5 +665,42 @@
   .cs-benefit-lbl {
     font-size: 0.6rem;
     text-align: center;
+  }
+}
+/* ── Benefits responsive fix ── */
+@media (max-width: 1180px) {
+  .cs-benefits-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .cs-benefit {
+    flex: unset;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .cs-benefits-row {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cs-benefits-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  .cs-benefits-heading {
+    text-align: center;
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .cs-benefits-row {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
